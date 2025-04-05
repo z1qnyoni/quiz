@@ -23,7 +23,7 @@ const Chart = ({ type, data, options = {} }) => {
     } else if (type === 'line') {
       drawLineChart(ctx, data, canvasWidth, canvasHeight, options);
     }
-  }, [type, data, options]);
+  }, [type, data, options]);  
 
   // Функция для отрисовки столбчатой диаграммы
   const drawBarChart = (ctx, data, canvasWidth, canvasHeight, options) => {
